@@ -22,5 +22,7 @@ public class LibrarySearchEngineApplication{
 
         rental.SearchBookRequest("title","Pride and Prejudice");
         rental.SearchBookRequest("author","Anne Frank");
+
+        System.out.println(rental.getStatus());
     }
 }

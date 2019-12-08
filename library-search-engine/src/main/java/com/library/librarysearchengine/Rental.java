@@ -13,6 +13,13 @@ public class Rental {
     public Book book;
     ArrayList<Book> lista = new ArrayList<Book>();
 
+    public Rental(){
+    }
+
+    Rental(Boolean status) {
+        this.status = status;
+    }
+
 
     public void addBook(Book book){
     lista.add(book);
@@ -33,5 +40,17 @@ public class Rental {
                 }
             }
         }
+    }
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return"Rental[" + "status=" + this.status + "]";
     }
 }
